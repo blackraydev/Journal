@@ -83,10 +83,10 @@ const Schedule = () => {
         }
     }, [currentSubjects]);
 
-    useEffect(() => isEmpty(), [date, time, theme, homework]);
+    useEffect(() => isEmpty(), [date, time, theme]);
 
     const isEmpty = () => {
-        if (!date || !time || !theme.trim() || !homework.trim() || !groups.length || !teachers.length || !currentSubjects.length) {
+        if (!date || !time || !theme.trim() || !groups.length || !teachers.length || !currentSubjects.length) {
             return setCreateEnabled(true);
         }
 

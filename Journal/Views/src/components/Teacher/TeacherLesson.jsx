@@ -47,29 +47,6 @@ const Group = ({ lesson, selectedLesson, setSelectedLesson }) => {
         }
     }, [date]);
 
-    useEffect(() => {
-        const withoutTime = dateString.substr(0, 10);
-
-        if (withoutTime) {
-            const day = withoutTime.substr(0, 2);
-            const month = Number(withoutTime.substr(3, 2)) - 1;
-            const year = withoutTime.substr(6, 4);
-
-            const today = new Date();
-            const subjectDate = new Date();
-    
-            subjectDate.setFullYear(year);
-            subjectDate.setMonth(month);
-            subjectDate.setDate(day);
-            subjectDate.setHours(0, 0, 0);
-    
-            if (subjectDate.getDate() - today.getDate() < 0) {
-                setShouldRender(false);
-            }
-        }
-        
-    }, [dateString]);
-
     const lessonClickHandler = () => {
         if (selectedLesson === lesson) {
             setSelectedLesson(null);
