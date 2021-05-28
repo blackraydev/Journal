@@ -1,0 +1,236 @@
+.homework_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #181c1f;
+  border-radius: 25px;
+}
+
+.homework_component h1 {
+  font-size: 28px;
+}
+
+.homework_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 45%;
+  height: 100%;
+}
+
+.homework_component .left_side .homeworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #292c31;
+  width: 95%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.homework_component .left_side .homeworks .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.homework_component .left_side .homeworks .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 5px solid #292c31;
+}
+
+.homework_component .left_side .homeworks .fields div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.homework_component .left_side .homeworks .fields div:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.homework_component .left_side .homeworks .fields .field_student {
+  width: 60%;
+}
+
+.homework_component .left_side .homeworks .fields .field_date {
+  width: 40%;
+}
+
+.homework_component .middle_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 100%;
+}
+
+.homework_component .middle_side textarea {
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 35px;
+  width: 300px;
+  height: 250px;
+  background: white;
+  color: black;
+}
+
+.homework_component .middle_side textarea:disabled {
+  color: black;
+}
+
+.homework_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  padding-bottom: 25px;
+}
+
+.homework_component .right_side textarea {
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 35px;
+  width: 300px;
+  height: 250px;
+  background: white;
+  color: black;
+}
+
+.homework_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 225px;
+  height: 50px;
+  color: white;
+  background: #d8573d;
+}
+
+.homework_component .right_side button:hover {
+  background: #ee3814;
+}
+
+.homework_component .right_side button:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
+
+.homework_component .right_side .remove_group, .homework_component .right_side .remove_student {
+  background: #822323;
+}
+
+.homework_component .right_side .remove_group:hover, .homework_component .right_side .remove_student:hover {
+  background: #c82323;
+}
+
+.homework_component .right_side .remove_group:disabled, .homework_component .right_side .remove_student:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}

@@ -1,0 +1,36 @@
+@import "./mixins";
+
+.navbar {
+    @include flex(row, center, center);
+
+    height: 125px;
+
+    a {
+        border-radius: 25px;
+        transition: .15s ease-out;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(216, 87, 61);
+        margin-right: 40px;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(238, 56, 20);
+        }
+    }
+
+    .link {
+        @include flex(row, center, center);
+
+        transition: .15s ease-out;
+        border-radius: 25px;
+        width: 165px;
+        height: 45px;
+        font-size: 20px;
+
+        &.active {
+            color: white;
+            background: rgb(216, 87, 61);
+        }
+    }
+}

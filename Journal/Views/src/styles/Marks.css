@@ -1,0 +1,199 @@
+.marks_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #181c1f;
+  border-radius: 25px;
+}
+
+.marks_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+}
+
+.marks_component .left_side h1 {
+  font-size: 28px;
+}
+
+.marks_component .left_side .marks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #292c31;
+  width: 90%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.marks_component .left_side .marks .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.marks_component .left_side .marks .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 5px solid #292c31;
+}
+
+.marks_component .left_side .marks .fields div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.marks_component .left_side .marks .fields div:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.marks_component .left_side .marks .fields .field_student {
+  width: 60%;
+}
+
+.marks_component .left_side .marks .fields .field_mark {
+  width: 40%;
+}
+
+.marks_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.marks_component .right_side select {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 75%;
+  height: 45px;
+}
+
+.marks_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 275px;
+  height: 50px;
+  color: white;
+  background: #d8573d;
+}
+
+.marks_component .right_side button:hover {
+  background: #ee3814;
+}
+
+.marks_component .right_side button:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
+
+.marks_component .right_side .remove_mark {
+  background: #822323;
+}
+
+.marks_component .right_side .remove_mark:hover {
+  background: #c82323;
+}
+
+.marks_component .right_side .remove_mark:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}

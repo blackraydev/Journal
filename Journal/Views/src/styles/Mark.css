@@ -1,0 +1,70 @@
+.mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+}
+
+.mark:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+.mark.active {
+  background: #677586;
+}
+
+.mark.active:hover {
+  background: #677586;
+}
+
+.mark:hover {
+  background: #404750;
+}
+
+.mark div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.mark div:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.mark .existing_student {
+  width: 60%;
+}
+
+.mark .existing_mark {
+  width: 40%;
+}

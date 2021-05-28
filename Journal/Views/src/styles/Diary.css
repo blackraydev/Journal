@@ -1,0 +1,230 @@
+.diary_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #181c1f;
+  border-radius: 25px;
+}
+
+.diary_component h1 {
+  font-size: 28px;
+}
+
+.diary_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+}
+
+.diary_component .left_side .lessons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #292c31;
+  width: 95%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.diary_component .left_side .lessons .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.diary_component .left_side .lessons .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 5px solid #292c31;
+}
+
+.diary_component .left_side .lessons .fields div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.diary_component .left_side .lessons .fields div:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.diary_component .left_side .lessons .fields .field_subject {
+  width: 25%;
+}
+
+.diary_component .left_side .lessons .fields .field_teacher {
+  width: 30%;
+}
+
+.diary_component .left_side .lessons .fields .field_date {
+  width: 15%;
+}
+
+.diary_component .left_side .lessons .fields .field_theme {
+  width: 20%;
+}
+
+.diary_component .left_side .lessons .fields .field_mark {
+  width: 10%;
+}
+
+.diary_component .left_side h1 {
+  margin-top: 25px;
+}
+
+.diary_component .left_side textarea {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 35px;
+  width: 75%;
+  height: 50px;
+  background: white;
+  color: black;
+}
+
+.diary_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  padding-bottom: 25px;
+}
+
+.diary_component .right_side textarea {
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 35px;
+  width: 300px;
+  height: 250px;
+  background: white;
+  color: black;
+}
+
+.diary_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 225px;
+  height: 50px;
+  color: white;
+  background: #d8573d;
+}
+
+.diary_component .right_side button:hover {
+  background: #ee3814;
+}
+
+.diary_component .right_side button:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
+
+.diary_component .right_side .remove_group, .diary_component .right_side .remove_student {
+  background: #822323;
+}
+
+.diary_component .right_side .remove_group:hover, .diary_component .right_side .remove_student:hover {
+  background: #c82323;
+}
+
+.diary_component .right_side .remove_group:disabled, .diary_component .right_side .remove_student:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}

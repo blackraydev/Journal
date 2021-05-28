@@ -1,0 +1,77 @@
+.teacher_lesson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+}
+
+.teacher_lesson:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+.teacher_lesson.active {
+  background: #677586;
+}
+
+.teacher_lesson.active:hover {
+  background: #677586;
+}
+
+.teacher_lesson:hover {
+  background: #404750;
+}
+
+.teacher_lesson div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.teacher_lesson div:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.teacher_lesson .existing_group {
+  width: 15%;
+}
+
+.teacher_lesson .existing_subject {
+  width: 30%;
+}
+
+.teacher_lesson .existing_date {
+  width: 20%;
+}
+
+.teacher_lesson .existing_theme {
+  width: 35%;
+}

@@ -1,0 +1,70 @@
+.report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+}
+
+.report:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+.report:hover {
+  background: #404750;
+}
+
+.report td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.report td:not(:last-of-type) {
+  border-right: 5px solid #292c31;
+}
+
+.report .existing_subject {
+  width: 30%;
+}
+
+.report .existing_group {
+  width: 17%;
+}
+
+.report .existing_student {
+  width: 35%;
+}
+
+.report .existing_mark {
+  width: 18%;
+}

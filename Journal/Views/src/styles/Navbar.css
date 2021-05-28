@@ -1,0 +1,58 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125px;
+}
+
+.navbar a {
+  border-radius: 25px;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  font-size: 18px;
+  font-weight: 500;
+  color: #d8573d;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ee3814;
+}
+
+.navbar .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  border-radius: 25px;
+  width: 165px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.navbar .link.active {
+  color: white;
+  background: #d8573d;
+}

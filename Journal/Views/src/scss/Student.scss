@@ -1,0 +1,37 @@
+@import "./mixins";
+
+.student {
+    @include flex(row, flex-start, center);
+
+    font-size: 18px;
+    font-weight: 400;
+    transition: .15s ease-out;
+    cursor: pointer;
+    width: 100%;
+    min-height: 50px;
+    background: rgb(58, 63, 69);
+
+    &:not(:first-of-type) {
+        margin-top: 5px;
+    }
+
+    &.active {
+        background: rgb(118, 127, 139);
+
+        &:hover {
+            background: rgb(103, 117, 134);
+        }
+    }
+
+    &:hover {
+        background: rgb(64, 71, 80);
+    }
+
+    .existing_student {
+        @include flex(row, flex-start, center);
+
+        min-height: 50px;
+        width: 100%;
+        margin-left: 15px;
+    }
+}
