@@ -133,6 +133,7 @@ const Schedule = () => {
         setDate("");
         setTime("");
         setTheme("");
+        setHomework("");
     }
 
     return (

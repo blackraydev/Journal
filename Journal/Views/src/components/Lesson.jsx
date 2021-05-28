@@ -62,8 +62,8 @@ const Group = ({ lesson, selectedLesson, setSelectedLesson }) => {
             subjectDate.setMonth(month);
             subjectDate.setDate(day);
             subjectDate.setHours(0, 0, 0);
-    
-            if (subjectDate.getDate() - today.getDate() < 0) {
+            
+            if ((subjectDate.getMonth() == today.getMonth() && subjectDate.getDate() - today.getDate() < 0) || (subjectDate.getMonth() < today.getMonth())) {
                 setShouldRender(false);
             }
         }
