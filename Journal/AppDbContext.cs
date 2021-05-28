@@ -19,7 +19,7 @@ namespace Journal {
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseMySql(
-                "server=localhost;user=root;password=89372908085hfvbkm;database=journal;",
+                "server=localhost;user=root;password={PASSWORD};database=journal;",
                 new MySqlServerVersion(new Version(8, 0, 11))
             );
         }
