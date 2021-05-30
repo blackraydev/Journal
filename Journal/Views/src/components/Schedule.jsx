@@ -136,6 +136,20 @@ const Schedule = () => {
         setHomework("");
     }
 
+    const sortByDate = (a, b) => {
+        return transformDate(a) - transformDate(b);
+    }
+
+    const transformDate = (targetDate) => {
+        const date = targetDate.date.substr(0, 10);
+        const time = targetDate.date.substr(11, 5);
+        const timeArr = time.split(":");
+        const reverseDate = date.split(".").reverse().join("-");
+        const reverseTimeDate = new Date(reverseDate).setHours(timeArr[0], timeArr[1]);
+
+        return reverseTimeDate;
+    }
+
     return (
         <Layout>
             {
@@ -163,7 +177,8 @@ const Schedule = () => {
                         </div>
                         <div className="list">
                             { 
-                                lessons.map(lesson => 
+                                lessons.sort(sortByDate)
+                                       .map(lesson => 
                                     <Lesson lesson={lesson}
                                           selectedLesson={selectedLesson}
                                           setSelectedLesson={setSelectedLesson}

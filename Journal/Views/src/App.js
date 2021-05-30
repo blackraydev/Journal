@@ -23,12 +23,14 @@ export default class App extends Component {
         <Switch>
           <Route exact path="/" component={Auth} />
           <Route path="/teacher">
+            <Me />
             <Navbar />
             <Switch>
               <Route exact path="/teacher" component={TeacherSchedule}/>
             </Switch>
           </Route>
           <Route path="/student">
+            <Me />
             <Navbar />
             <Switch>
               <Route exact path="/student" component={Diary}/>

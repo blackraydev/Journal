@@ -61,9 +61,9 @@ const Group = ({ lesson, selectedLesson, setSelectedLesson }) => {
             <div onClick={lessonClickHandler} 
                  className={lesson === selectedLesson ? "teacher_lesson active" : "teacher_lesson"}
             >
+                <div className="existing_date">{ dateString }</div>
                 <div className="existing_group">{ group.name }</div>
                 <div className="existing_subject">{ subject.name }</div>
-                <div className="existing_date">{ dateString }</div>
                 <div className="existing_theme">{ lesson.theme }</div>
             </div>
         )

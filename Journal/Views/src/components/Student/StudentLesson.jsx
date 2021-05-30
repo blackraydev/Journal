@@ -64,9 +64,9 @@ const StudentLesson = ({ lesson, selectedLesson, setSelectedLesson }) => {
         <div onClick={lessonClickHandler} 
              className={lesson === selectedLesson ? "student_lesson active" : "student_lesson"}
         >
+            <div className="existing_date">{ dateString }</div>
             <div className="existing_subject">{ subject.name }</div>
             <div className="existing_teacher">{ teacher.fullName }</div>
-            <div className="existing_date">{ dateString }</div>
             <div className="existing_theme">{ lesson.theme }</div>
             <div className="existing_mark">{ mark && mark.mark }</div>
         </div>

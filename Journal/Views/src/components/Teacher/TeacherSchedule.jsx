@@ -92,6 +92,20 @@ const TeacherSchedule = () => {
             })
     }
 
+    const sortByDate = (a, b) => {
+        return transformDate(a) - transformDate(b);
+    }
+
+    const transformDate = (targetDate) => {
+        const date = targetDate.date.substr(0, 10);
+        const time = targetDate.date.substr(11, 5);
+        const timeArr = time.split(":");
+        const reverseDate = date.split(".").reverse().join("-");
+        const reverseTimeDate = new Date(reverseDate).setHours(timeArr[0], timeArr[1]);
+
+        return reverseTimeDate;
+    }
+
     return (
         <Layout>
             <div className="teacher_schedule_component">
@@ -99,14 +113,15 @@ const TeacherSchedule = () => {
                     <h1>Расписание</h1>
                     <div className="teacher_schedule">
                         <div className="fields">
+                            <div className="field_date">Дата</div>
                             <div className="field_group">Группа</div>
                             <div className="field_subject">Предмет</div>
-                            <div className="field_date">Дата</div>
                             <div className="field_theme">Тема</div>
                         </div>
                         <div className="list">
                             { 
-                                teacherLessons.map(lesson => 
+                                teacherLessons.sort(sortByDate)
+                                              .map(lesson => 
                                     <TeacherLesson lesson={lesson}
                                           selectedLesson={selectedLesson}
                                           setSelectedLesson={setSelectedLesson}

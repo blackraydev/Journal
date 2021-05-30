@@ -51,7 +51,6 @@
   border-radius: 25px;
   -webkit-transition: .15s ease-out;
   transition: .15s ease-out;
-  font-size: 14px;
   font-weight: 500;
   color: #d8573d;
   margin-right: 40px;
@@ -81,7 +80,7 @@
   border-radius: 25px;
   width: 150px;
   height: 45px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .navbar .link.active {
