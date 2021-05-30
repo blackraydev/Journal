@@ -44,12 +44,12 @@ const MarksModal = ({ setOpenEditModal, mark, setMarks, setSelectedMark }) => {
                         <label>Оценка</label>
                         <select className="selector" onChange={e => setStudentMark(e.target.value)}>
                             {
-                                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((elem, index) => 
-                                    <option value={index + 1} 
+                                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Не явка", "Болен"].map((elem, index) => 
+                                    <option value={ elem } 
                                             selected={index + 1 == mark.mark}
                                             key={index}
                                     >
-                                        {index + 1}
+                                        { elem }
                                     </option>
                                 )
                             }

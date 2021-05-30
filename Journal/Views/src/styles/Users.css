@@ -122,6 +122,10 @@
   border-right: 5px solid #292c31;
 }
 
+.users_component .left_side .users .fields .clickable {
+  cursor: pointer;
+}
+
 .users_component .left_side .users .fields .field_role {
   width: 15%;
 }

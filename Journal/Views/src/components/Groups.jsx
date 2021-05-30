@@ -125,8 +125,6 @@ const Groups = () => {
     const removeStudentFromGroupHandler = () => {
         const student = { studentId: selectedStudent.id, groupId: selectedGroup.id };
 
-        console.log(student);
-
         return removeStudentFromGroupRequest(student)
             .then(() => {
                 const groupId = selectedGroup.id;

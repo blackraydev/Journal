@@ -40,6 +40,7 @@ const Navbar = () => {
                 <CustomLink link="/main/users" text="Пользователи" tabName={tabName} setTabName={setTabName} />
                 <CustomLink link="/main/schedule" text="Расписание" tabName={tabName} setTabName={setTabName} />
                 <CustomLink link="/main/reports" text="Отчеты" tabName={tabName} setTabName={setTabName} />
+                <CustomLink link="/main/teacherSubjects" text="Преподаватели" tabName={tabName} setTabName={setTabName} />
             </>
         )
     }
@@ -62,10 +63,14 @@ const Navbar = () => {
 
     return(
         <div className="navbar">
-            { role == "Зав. кафедрой" ? renderAdminPart() : null }
-            { role == "Преподаватель" ? renderTeacherPart() : null }
-            { role == "Студент" ? renderStudentPart() : null }
-            <CustomLink link="/" text="Выход" tabName={tabName} setTabName={setTabName} logout/>
+            <div className="left_part">
+                { role == "Зав. кафедрой" ? renderAdminPart() : null }
+                { role == "Преподаватель" ? renderTeacherPart() : null }
+                { role == "Студент" ? renderStudentPart() : null }
+            </div>
+            <div className="right_part">
+                <CustomLink link="/" text="Выход" tabName={tabName} setTabName={setTabName} logout/>
+            </div>
         </div>
     )
 }

@@ -155,10 +155,10 @@ const Schedule = () => {
                     <h1>Расписание</h1>
                     <div className="schedule">
                         <div className="fields">
+                            <div className="field_date">Дата</div>
                             <div className="field_group">Группа</div>
                             <div className="field_teacher">Преподаватель</div>
                             <div className="field_subject">Предмет</div>
-                            <div className="field_date">Дата</div>
                             <div className="field_theme">Тема</div>
                         </div>
                         <div className="list">

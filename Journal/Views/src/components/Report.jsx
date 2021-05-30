@@ -46,7 +46,7 @@ const Report = ({ studentId, groupId, subjectId }) => {
 
     useEffect(() => {
         if (marks) {
-            const filteredMarks = marks.filter(mrk => mrk.studentId == studentId && mrk.subjectId == subjectId);
+            const filteredMarks = marks.filter(mrk => mrk.studentId == studentId && mrk.subjectId == subjectId && mrk.mark != "Не явка" && mrk.mark != "Болен");
             const studentMarks = filteredMarks.map(mrk => mrk.mark);
             const markSum = studentMarks.reduce((sum, mark) => sum + mark, 0);
 

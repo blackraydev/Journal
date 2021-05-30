@@ -1,0 +1,10 @@
+@import "./mixins";
+
+.me_component {
+    @include flex(row, flex-end, center);
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 35px;
+    color: rgb(216, 87, 61);
+}

@@ -1,0 +1,183 @@
+@import "./mixins";
+
+.teachers_component {
+    @include flex(row, center, flex-start);
+
+    width: 100%;
+    height: 100%;
+    background: rgb(24, 28, 31);
+    border-radius: 25px;
+
+    .left_side {
+        @include flex(column, flex-start, center);
+        
+        width: 35%;
+        height: 100%;
+
+        .teachers {
+            @include flex(column, flex-start, center);
+            
+            overflow: hidden;
+            background: rgb(41, 44, 49);
+            width: 90%;
+            height: 80%;
+            margin-top: 25px;
+            border-radius: 15px;
+
+            .list {
+                @include flex(column, flex-start, center);
+                
+                overflow: scroll;
+                width: 100%;
+            }
+
+            .fields {
+                @include flex(row, flex-start, center);
+                
+                transition: .15s ease-out;
+                width: 100%;
+                min-height: 50px;
+                background: rgb(58, 63, 69);
+                font-weight: 600;
+                font-size: 20px;
+                border-bottom: 5px solid rgb(41, 44, 49);
+
+                .field_teacher {
+                    @include flex(row, flex-start, center);
+                    
+                    min-height: 50px;
+                    width: 100%;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    .middle_side {
+        @include flex(column, flex-start, center);
+        
+        width: 35%;
+        height: 100%;
+
+        .subjects {
+            @include flex(column, flex-start, center);
+            
+            overflow: hidden;
+            background: rgb(41, 44, 49);
+            width: 90%;
+            height: 80%;
+            margin-top: 25px;
+            border-radius: 15px;
+
+            .list {
+                @include flex(column, flex-start, center);
+                
+                overflow: scroll;
+                width: 100%;
+            }
+
+            .fields {
+                @include flex(row, flex-start, center);
+                
+                transition: .15s ease-out;
+                width: 100%;
+                min-height: 50px;
+                background: rgb(58, 63, 69);
+                font-weight: 600;
+                font-size: 20px;
+                border-bottom: 5px solid rgb(41, 44, 49);
+
+                .field_subject {
+                    @include flex(row, flex-start, center);
+                    
+                    min-height: 50px;
+                    width: 100%;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    .right_side {
+        @include flex(column, flex-start, center);
+        
+        width: 30%;
+        padding-bottom: 25px;
+
+        .top_part {
+            @include flex(column, flex-start, center);
+            
+            width: 100%;
+
+            input {
+                margin-top: 30px;
+                padding-left: 15px;
+                border-radius: 35px;
+                font-size: 18px;
+                width: 75%;
+                height: 45px;
+            }
+
+            select {
+                margin-top: 35px;
+                padding-left: 15px;
+                border-radius: 35px;
+                font-size: 18px;
+                width: 90%;
+                height: 45px;
+            }
+        }
+
+        .bottom_part {
+            @include flex(column, flex-start, center);
+            
+            width: 100%;
+            margin-top: 25px;
+
+            .selector {
+                margin-top: 30px;
+                padding-left: 15px;
+                border-radius: 50px;
+                font-size: 18px;
+                width: 75%;
+                height: 45px;
+            }
+        }
+
+        button {
+            transition: .15s ease-out;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            width: 275px;
+            height: 50px;
+            color: white;
+            background: rgb(216, 87, 61);
+
+            &:hover {
+                background: rgb(238, 56, 20);
+            }
+
+            &:disabled {
+                cursor: unset;
+                color: rgb(130, 130, 150);
+                background: rgb(70, 70, 90);
+            }
+        }
+
+        .remove_subject {
+            background: rgb(130, 35, 35);
+
+            &:hover {
+                background: rgb(200, 35, 35);
+            }
+
+            &:disabled {
+                cursor: unset;
+                color: rgb(130, 130, 150);
+                background: rgb(70, 70, 90);
+            }
+        }
+    }
+}

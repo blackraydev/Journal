@@ -26,6 +26,7 @@ const Auth = () => {
         setIsError(false);
 
         localStorage.setItem("role", user.role);
+        localStorage.setItem("fullName", user.fullName);
 
         switch (user.role) {
             case "Зав. кафедрой":

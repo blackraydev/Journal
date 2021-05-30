@@ -4,12 +4,14 @@ import Auth from './components/Auth';
 import Groups from './components/Groups';
 import Homeworks from './components/Homeworks';
 import Marks from './components/Marks';
+import Me from './components/Me';
 import Navbar from './components/Navbar';
 import Reports from './components/Reports';
 import Schedule from './components/Schedule';
 import Diary from './components/Student/Diary';
 import Subjects from './components/Subjects';
 import TeacherSchedule from './components/Teacher/TeacherSchedule';
+import Teachers from './components/Teachers';
 import Users from './components/Users';
 
 import './custom.css'
@@ -33,12 +35,14 @@ export default class App extends Component {
             </Switch>
           </Route>
           <Route path="/main">
+            <Me />
             <Navbar />
             <Switch>
               <Route exact path="/main" component={Subjects}/>
               <Route exact path="/main/groups" component={Groups}/>
               <Route exact path="/main/users" component={Users}/>
               <Route exact path="/main/reports" component={Reports}/>
+              <Route exact path="/main/teacherSubjects" component={Teachers}/>
               <Route path="/main/schedule">
                 <Switch>
                   <Route exact path="/main/schedule" component={Schedule}/>

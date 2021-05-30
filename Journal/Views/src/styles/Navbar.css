@@ -6,20 +6,52 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 125px;
+  height: 75px;
+}
+
+.navbar .left_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .right_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar a {
   border-radius: 25px;
   -webkit-transition: .15s ease-out;
   transition: .15s ease-out;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   color: #d8573d;
   margin-right: 40px;
@@ -47,9 +79,9 @@
   -webkit-transition: .15s ease-out;
   transition: .15s ease-out;
   border-radius: 25px;
-  width: 165px;
+  width: 150px;
   height: 45px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .navbar .link.active {

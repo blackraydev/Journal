@@ -1,6 +1,6 @@
 @import "./mixins";
 
-.group {
+.teacher {
     @include flex(row, flex-start, center);
 
     font-size: 18px;
@@ -27,7 +27,7 @@
         background: rgb(64, 71, 80);
     }
 
-    .existing_group {
+    .existing_teacher {
         @include flex(row, flex-start, center);
 
         min-height: 50px;

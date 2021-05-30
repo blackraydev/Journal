@@ -7,6 +7,6 @@ namespace Journal.Models {
         public int LessonId { get; set; }
         public int SubjectId { get; set; }
         public int StudentId { get; set; }
-        public int Mark { get; set; }
+        public string Mark { get; set; }
     }
 }

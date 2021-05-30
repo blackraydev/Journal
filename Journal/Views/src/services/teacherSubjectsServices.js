@@ -9,3 +9,15 @@ export const getTeacherSubjectsRequest = async () => {
         .then(response => response.data)
         .catch(e => { throw e });
 }
+
+export const createTeacherSubjectRequest = async (teacherSubject) => {
+    return await axiosInstance.post("/create", teacherSubject)
+        .then(response => response.data)
+        .catch(e => { throw e });
+}
+
+export const deleteTeacherSubjectRequest = async (deletedTeacherSubject) => {
+    return await axiosInstance.post("/delete", deletedTeacherSubject)
+        .then(response => response.data)
+        .catch(e => { throw e });
+}

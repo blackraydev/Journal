@@ -18,6 +18,7 @@ const Users = () => {
     const [createEnabled, setCreateEnabled] = useState(false);
     const [openEditModal, setOpenEditModal] = useState(false);
     const [openErrorModal, setOpenErrorModal] = useState(false);
+    const [sortId, setSortId] = useState(0);
 
     useEffect(() => {
         getUsersRequest()
@@ -78,6 +79,34 @@ const Users = () => {
         setPassword("");
     }
 
+    const sortUsers = (a, b) => {
+        if (sortId == 0) return a.id - b.id;
+        if (sortId == 1) {
+            if (a.role == "Зав. кафедрой" && b.role != "Зав. кафедрой") return -1;
+            else if (a.role == "Зав. кафедрой" && b.role == "Зав. кафедрой") return 0;
+            else return 1;
+        }
+        if (sortId == 2) {
+            if (a.role == "Преподаватель" && b.role != "Преподаватель") return -1;
+            else if (a.role == "Преподаватель" && b.role == "Преподаватель") return 0;
+            else return 1;
+        }
+        if (sortId == 3) {
+            if (a.role == "Студент" && b.role != "Студент") return -1;
+            else if (a.role == "Студент" && b.role == "Студент") return 0;
+            else return 1;
+        }
+    }
+
+    const sortIdHandler = () => {
+        if (sortId == 3) {
+            setSortId(0);
+        }
+        else {
+            setSortId(prevState => ++prevState);
+        }
+    }
+
     return (
         <Layout>
             {
@@ -97,7 +126,7 @@ const Users = () => {
                     <h1>Пользователи</h1>
                     <div className="users">
                         <div className="fields">
-                            <div className="field_role">Роль</div>
+                            <div className="field_role clickable" onClick={sortIdHandler}>Роль</div>
                             <div className="field_fio">ФИО</div>
                             <div className="field_birth_date">Дата рождения</div>
                             <div className="field_login">Логин</div>
@@ -105,7 +134,7 @@ const Users = () => {
                         </div>
                         <div className="list">
                             { 
-                                users.sort((a, b) => a.id - b.id)
+                                users.sort(sortUsers)
                                      .map(user => 
                                     <User user={user}
                                           selectedUser={selectedUser}

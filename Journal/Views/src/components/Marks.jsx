@@ -195,12 +195,12 @@ const Marks = () => {
                     </select>
                     <select className="selector" onChange={e => setMark(e.target.value)}>
                         {
-                            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((elem, index) => 
-                                <option value={index + 1} 
+                            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Не явка", "Болен"].map((elem, index) => 
+                                <option value={ elem } 
                                         selected={index == 0}
                                         key={index}
                                 >
-                                    {index + 1}
+                                    { elem }
                                 </option>
                             )
                         }

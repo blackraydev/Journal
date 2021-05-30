@@ -1,0 +1,338 @@
+.teachers_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #181c1f;
+  border-radius: 25px;
+}
+
+.teachers_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 100%;
+}
+
+.teachers_component .left_side .teachers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #292c31;
+  width: 90%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.teachers_component .left_side .teachers .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.teachers_component .left_side .teachers .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 5px solid #292c31;
+}
+
+.teachers_component .left_side .teachers .fields .field_teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.teachers_component .middle_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 100%;
+}
+
+.teachers_component .middle_side .subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #292c31;
+  width: 90%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.teachers_component .middle_side .subjects .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.teachers_component .middle_side .subjects .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #3a3f45;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 5px solid #292c31;
+}
+
+.teachers_component .middle_side .subjects .fields .field_subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.teachers_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  padding-bottom: 25px;
+}
+
+.teachers_component .right_side .top_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.teachers_component .right_side .top_part input {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 75%;
+  height: 45px;
+}
+
+.teachers_component .right_side .top_part select {
+  margin-top: 35px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 90%;
+  height: 45px;
+}
+
+.teachers_component .right_side .bottom_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.teachers_component .right_side .bottom_part .selector {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 75%;
+  height: 45px;
+}
+
+.teachers_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 275px;
+  height: 50px;
+  color: white;
+  background: #d8573d;
+}
+
+.teachers_component .right_side button:hover {
+  background: #ee3814;
+}
+
+.teachers_component .right_side button:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
+
+.teachers_component .right_side .remove_subject {
+  background: #822323;
+}
+
+.teachers_component .right_side .remove_subject:hover {
+  background: #c82323;
+}
+
+.teachers_component .right_side .remove_subject:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
